@@ -1,39 +1,19 @@
-Fake News Detection with Deep Learning
-Detect fake news articles by leveraging deep learning techniques. This project identifies specific keywords from news articles and compares them against a dataset sourced from Kaggle, achieving an average accuracy of approximately 90%.
+# Fake News Detection with Deep Learning
 
-📊 Analysis
-Word Clouds Comparison
-Visualize the frequency of words in real vs. fake news.
-Real news often cites specific publications, while fake news lacks these mentions.
-Key findings:
-Presence of "WASHINGTON (REUTERS)" in genuine articles.
-Occurrence of tweets in the dataset.
-Absence of publication info in some texts.
-🧹 Data Cleaning
-Extract and remove mentions like Reuters or tweets.
-Separate publication details from the main content.
-Filter out articles without any text.
-Store the text and title in respective datasets.
-🔄 Data Preprocessing
-Assign class labels: real and fake.
-Merge real and fake news datasets with their text and class.
-📈 Vectorization with Word2Vec
-Transform text data into numeric vectors.
-Capture word context for semantic and syntactic similarity.
-Use these vectors as initial inputs for machine learning models.
-🚀 Testing the Model
-To evaluate the model:
+This repository houses a deep learning-based solution designed to combat the proliferation of fake news. By leveraging the power of neural networks, the project aims to discern the veracity of news articles.
 
-Copy a news summary or dataset into the x=[] field at the end of the code.
-Execute the program.
-Sample articles for testing:
+## Overview
 
-DGCA lifts mask mandate
-China eases COVID curbs
-Neurological damage by COVID-19
-🛠 Modules Used
-NumPy: Efficient array operations.
-Pandas: High-performance data analysis.
-Matplotlib: 2D array plotting.
-wordcloud: Visualize text data.
-TENSORFLOW: Machine learning platform with high-level APIs.
+- **Dataset**: The model is trained on a comprehensive dataset containing genuine and fabricated news articles.
+- **Model Architecture**: Utilizes a deep neural network that's fine-tuned for the nuances of natural language, ensuring accurate fake news detection.
+- **Applications**: This model can be integrated into news aggregation platforms, social media sites, and other platforms where news authenticity is crucial.
+
+## Key Features
+
+1. **Deep Learning**: Harnesses the power of neural networks for accurate detection.
+2. **Comprehensive Training**: The model is exposed to a wide variety of news articles, ensuring robustness.
+3. **Integration Ready**: Designed for easy integration into existing platforms.
+
+## Getting Started
+
+To utilize this model, follow the setup instructions provided in the repository. Feedback and contributions are always welcome!
